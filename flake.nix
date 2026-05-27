@@ -24,6 +24,7 @@
             ninja
             pkg-config
             qt6.wrapQtAppsHook
+            bun
           ];
 
           buildInputs = with pkgs; [
