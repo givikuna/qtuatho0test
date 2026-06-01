@@ -11,6 +11,9 @@ const PORT: number = 3000;
 
 const app: express.Application = express.default();
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const config: ConfigParams = {
     authRequired: false,
     auth0Logout: true,

@@ -3,6 +3,8 @@ import * as express from "express";
 export const router: express.Router = express.Router();
 
 router.get("/", (req: express.Request, res: express.Response): void => {
+    console.log(req.oidc.isAuthenticated());
+
     if (!req.oidc.isAuthenticated()) {
         res.type("html").send(/* HTML */ `
             <h1>auth0:</h1>
