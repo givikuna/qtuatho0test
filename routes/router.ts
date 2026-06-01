@@ -14,6 +14,7 @@ router.get("/", (req: express.Request, res: express.Response): void => {
     }
 
     const username: string = req.oidc.user?.["name"];
+
     res.type("html").send(/* HTML */ `
         <h1>profiles:</h1>
         <p>logged in as ${username}</p>
