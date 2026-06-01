@@ -1,6 +1,6 @@
 {
     "tabWidth": 4,
-    "printWidth": 110,
+    "printWidth": 80,
     "semi": true,
     "trailingComma": "all",
     "bracketSpacing": true,
@@ -12,7 +12,12 @@
     "endOfLine": "lf",
     "overrides": [
         {
-            "files": ["*.json", "*.jsonc", ".eslintrc", ".prettierrc"],
+            "files": [
+                "*.json",
+                "*.jsonc",
+                ".eslintrc",
+                ".prettierrc"
+            ],
             "options": {
                 "trailingComma": "none"
             }

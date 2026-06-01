@@ -1,5 +1,6 @@
 import * as express from "express";
 import * as dotenv from "dotenv";
+import * as cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const PORT: number = 3000;
 
 const app: express.Application = express.default();
 
+app.use(cookieParser.default());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
