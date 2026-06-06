@@ -5,6 +5,10 @@ export const router: express.Router = express.Router();
 router.get("/", (req: express.Request, res: express.Response): void => {
     console.log(req.oidc.isAuthenticated());
 
+    console.log("Access Token:", req.oidc.accessToken?.access_token);
+    console.log("ID Token:", req.oidc.idToken);
+    console.log("Full token set:", req.oidc.accessToken);
+
     if (!req.oidc.isAuthenticated()) {
         res.type("html").send(/* HTML */ `
             <h1>auth0:</h1>

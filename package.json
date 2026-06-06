@@ -11,6 +11,6 @@
         "express-openid-connect": "^3.0.0"
     },
     "scripts": {
-        "run": "bun ./cgi/server.ts"
+        "run": "tsx ./cgi/server.ts"
     }
 }

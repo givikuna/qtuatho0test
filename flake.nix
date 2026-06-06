@@ -25,6 +25,9 @@
             pkg-config
             qt6.wrapQtAppsHook
             bun
+
+            nodejs
+            tsx
           ];
 
           buildInputs = with pkgs; [
