@@ -2,11 +2,11 @@ import * as grpc from "@grpc/grpc-js";
 import * as jwksClient from "jwks-rsa";
 import * as jwt from "jsonwebtoken";
 
-import { IUserServiceServer } from "../../../src/proto/proto/user_grpc_pb";
+import { IUserServiceServer } from "../../../src/proto/user_grpc_pb";
 import {
     GetProfileRequest,
     GetProfileResponse,
-} from "../../../src/proto/proto/user_pb";
+} from "../../../src/proto/user_pb";
 
 import { verifyToken } from "../../helpers/verifyToken";
 

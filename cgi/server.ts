@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 import * as jwksClient from "jwks-rsa";
 import * as grpc from "@grpc/grpc-js";
 
-import { UserServiceService } from "../src/proto/proto/user_grpc_pb";
+import { UserServiceService } from "../src/proto/user_grpc_pb";
 
 import { IUserServiceServerFactory } from "./classes/factories/IUserServiceServerFactory";
 
